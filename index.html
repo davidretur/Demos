@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Duarte - Desarrollador de Software</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-code"></i> Dev Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="gradient-text">¡Excelente dia! Soy <span>David Duarte</span></h1>
+                    <p class="lead">Desarrollador de Software Full Stack especializado en crear experiencias digitales innovadoras y soluciones tecnológicas de vanguardia.</p>
+                    <div class="hero-buttons mt-4">
+                        <a href="#projects" class="btn btn-gradient-primary me-3">
+                            <i class="fas fa-rocket"></i> Ver Proyectos
+                        </a>
+                        <a href="#contact" class="btn btn-outline-neon">
+                            <i class="fas fa-envelope"></i> Contactar
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="glass-card p-4" style="max-width: 400px; margin: 0 auto;">
+                        <div class="mb-3">
+                            <i class="fas fa-user-astronaut" style="font-size: 5rem; background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                        </div>
+                        <h4 class="gradient-text">Desarrollador Creativo</h4>
+                        <p class="text-muted">Transformando ideas en código</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="gradient-text display-4 mb-4">Acerca de Mí</h2>
+                    <p class="lead">Desarrollador apasionado por la tecnología y la innovación</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="neon-text mb-3"><i class="fas fa-user"></i> Mi Historia</h4>
+                        <p>Soy un desarrollador de software con más de 2 años de experiencia creando aplicaciones web y móviles. Me especializo en tecnologías modernas y siempre busco aprender nuevas herramientas para ofrecer las mejores soluciones.</p>
+                        <p>Mi pasión por la programación comenzó desde temprana edad, y desde entonces he trabajado en diversos proyectos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="neon-text mb-3"><i class="fas fa-target"></i> Mi Enfoque</h4>
+                        <p>Me enfoco en crear código limpio, escalable y mantenible. Creo firmemente en la importancia de las buenas prácticas de desarrollo y en la colaboración efectiva en equipo.</p>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h3 class="gradient-text">6+</h3>
+                                    <small>Proyectos Completados</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h3 class="gradient-text">2+</h3>
+                                    <small>Años de Experiencia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="gradient-text display-4 mb-4">Mis Proyectos</h2>
+                    <p class="lead">Una selección de mis trabajos más destacados</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 project-card">
+                        <div class="project-image">
+                            <i class="fa-brands fa-android"></i>
+                        </div>
+                        <h4 class="gradient-text mb-3">GAM</h4>
+                        <p class="text-muted mb-3">Aplicación aplicación móvil desarrollada con kotlin con Jetpack Compose, web api net 8 C# y Mysql.
+                            Permite a los usuarios explorar el catálogo, buscar productos, gestionar un carrito de compras, acceder a información de clientes, visualizar ubicaciones y consultar históricos de cotizaciones,
+                            adaptándose a diferentes roles de usuario dentro de la empresa.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-dark me-2">Kotlin</span>
+                            <span class="badge bg-success me-2">Jetpack Compose</span>
+                            <span class="badge bg-primary">.Net</span>
+                            <span class="badge bg-secondary">Sql server</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="https://github.com/davidretur/DemosAndroid/" class="btn btn-outline-neon btn-sm" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Documentación
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 project-card">
+                        <div class="project-image">
+                             <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h4 class="gradient-text mb-3">Sistema de Gestión de inventario</h4>
+                        <p class="text-muted mb-3">En este proyecto desarrolle una aplicacion web con Razor Pages y una API
+                        RESTful en .NET 8. Utilice Entity Framework Core para la gestio n de datos, Swagger para
+                        documentacio n de APIs y arquitectura en capas para un disen o robusto.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-info me-2">.Net</span>
+                            <span class="badge bg-secondary me-2">Razor</span>
+                            <span class="badge bg-dark">MySQL</span>
+                            <span class="badge bg-success">Dapper ORM</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-outline-neon btn-sm">
+                                <i class="fab fa-github"></i> Documentación
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 project-card">
+                        <div class="project-image">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h4 class="gradient-text mb-3">Aplicación web para contratación de seguros</h4>
+                        <p class="text-muted mb-3">Desarrolle modulos en
+                            aplicacio n web en ASP.NET MVC con C#, utilizando Dapper para la gestio n de datos en SQL
+                            Server 2019. Implemente interfaces responsivas con Bootstrap y JavaScript, y valide
+                            integraciones con Postman.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success me-2">C#</span>
+                            <span class="badge bg-primary me-2">ASP.NET</span>
+                            <span class="badge bg-secondary">SQL Server 2019</span>
+                            <span class="badge bg-dark">Entity Framework</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="https://anaseguros.com.mx/" class="btn btn-gradient-primary btn-sm" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i> Visitar Sitio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="gradient-text display-4 mb-4">Habilidades Técnicas</h2>
+                    <p class="lead">Tecnologías y herramientas que domino</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h5>Mobile</h5>
+                        <p class="text-muted">Kotlin, Java, Jetpack Compose, Xml</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h5>.NET (Framework, Core)</h5>
+                        <p class="text-muted">C#, Vb, WebAPI, Asp, Entity Framework, ADO.NET, LINQ, Dapper</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h5>JavaScript</h5>
+                        <p class="text-muted">ES6+, TypeScript</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5>Bases de Datos</h5>
+                        <p class="text-muted">Sql server, MySQL, PostgreSQL</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h5>Cloud</h5>
+                        <p class="text-muted">Docker, Google Cloud, Azure, VPS</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h5>Control de Versiones</h5>
+                        <p class="text-muted">Git, GitHub</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h5>Frameworks Frontend</h5>
+                        <p class="text-muted">Angular, React, Bootstrap, jQuery</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h5>Java</h5>
+                        <p class="text-muted">Spring Boot, JPA, REST APIs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="gradient-text display-4 mb-4">Contacto</h2>
+                    <p class="lead">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="glass-card p-4">
+                        <i class="fas fa-envelope gradient-text" style="font-size: 2.5rem;"></i>
+                        <h4 class="mt-3">Email</h4>
+                        <p class="text-muted">ing.jdduarte@outlook.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="glass-card p-4">
+                        <i class="fas fa-phone gradient-text" style="font-size: 2.5rem;"></i>
+                        <h4 class="mt-3">Teléfono</h4>
+                        <p class="text-muted">+52 5619458370</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="glass-card p-4">
+                        <i class="fas fa-map-marker-alt gradient-text" style="font-size: 2.5rem;"></i>
+                        <h4 class="mt-3">Ubicación</h4>
+                        <p class="text-muted">Ciudad de México, México</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="mb-0">&copy; 2025 David. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="social-icons text-end">
+                        <a href="https://github.com/davidretur" aria-label="GitHub" target="_blank" rel="noopener" class="text-decoration-none text-white me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
