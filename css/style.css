@@ -1,7 +1,7 @@
 /* Modern Glassmorphism and Neon Style CSS */
         :root {
             --primary-gradient: linear-gradient(135deg, #66baea 0%, #4b95a2 100%);
-            --secondary-gradient: linear-gradient(135deg, #00bd65 0%, #e9da55de 100%);
+            --secondary-gradient: linear-gradient(135deg, #232946 0%, #16161a 100%);
             --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
             --dark-bg: #0a0a0f;
             --card-bg: rgba(17, 17, 27, 0.8);
@@ -32,7 +32,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(45deg, #0a0a0f, #1a1a2e, #16213e, #0f3460);
+            background: linear-gradient(45deg, #0a0a0f, #0f0f1b, #0b101f, #0a0a0f);
             background-size: 400% 400%;
             animation: gradientShift 15s ease infinite;
         }
@@ -56,8 +56,8 @@
 
         .particle {
             position: absolute;
-            width: 4px;
-            height: 4px;
+            width: 2px;
+            height: 2px;
             background: var(--neon-blue);
             border-radius: 50%;
             animation: float 20s infinite linear;
@@ -285,6 +285,10 @@
             overflow: hidden;
         }
 
+        .skill-item {
+            min-height: 220px; /* Ajusta según tu preferencia */
+        }
+
         .skill-item:hover {
             transform: translateY(-5px);
             border-color: var(--neon-blue);
@@ -349,6 +353,15 @@
             background: var(--accent-gradient);
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+        }
+
+        /* Section Header Dark */
+        .section-header-dark {
+            background: rgba(20, 20, 30, 0.95);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+            padding: 32px 0 24px 0;
+            margin-bottom: 2.5rem !important;
         }
 
         /* Responsive */

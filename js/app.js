@@ -1,6 +1,4 @@
-    
-    
-        // Loading animation
+// Loading animation
         window.addEventListener('load', function() {
             setTimeout(() => {
                 document.getElementById('loadingOverlay').classList.add('fade-out');
@@ -20,7 +18,7 @@
                 particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
                 
                 // Random colors
-                const colors = ['#00d4ff', '#b537f2', '#667eea', '#f093fb'];
+                const colors = ['#00d4ff', '#00ffae', '#667eea', '#ffe600'];
                 particle.style.background = colors[Math.floor(Math.random() * colors.length)];
                 particle.style.boxShadow = `0 0 10px ${particle.style.background}`;
                 
@@ -48,7 +46,7 @@
             if (window.scrollY > 50) {
                 navbar.style.background = 'rgba(10, 10, 15, 0.95)';
             } else {
-                navbar.style.background = 'rgba(10, 10, 15, 0.9)';
+                navbar.style.background = 'rgba(10, 10, 15, 0.95)';
             }
         });
 
@@ -157,7 +155,7 @@
             left: 0;
             width: 0%;
             height: 3px;
-            background: linear-gradient(90deg, #00d4ff, #b537f2);
+            background: linear-gradient(90deg, #00d4ff,rgb(0, 114, 15));
             z-index: 10000;
             transition: width 0.3s ease;
         `;
@@ -177,9 +175,8 @@
             
             // Create gradient
             const gradient = ctx.createLinearGradient(0, 0, 32, 32);
-            gradient.addColorStop(0, '#00d4ff');
-            gradient.addColorStop(1, '#b537f2');
-            
+            gradient.addColorStop(0, '#00334d');
+            gradient.addColorStop(1, '#2c003e');
             ctx.fillStyle = gradient;
             ctx.fillRect(0, 0, 32, 32);
             
@@ -212,7 +209,7 @@
             if (konamiCode.join(',') === konami.join(',')) {
                 // Activate matrix effect
                 document.body.style.background = 'black';
-                document.body.innerHTML = '<div style="color: #00ff00; font-family: monospace; font-size: 12px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">🎉 ¡Código Konami Activado! 🎉<br>Desarrollador Nivel: HACKER<br><br>Recarga la página para volver 😉</div>';
+                document.body.innerHTML = '<div style="color:rgb(0, 255, 64); font-family: monospace; font-size: 12px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">🎉 ¡Código Konami Activado! 🎉<br>Desarrollador Nivel: HACKER<br><br>Recarga la página para volver 😉</div>';
                 
                 // Add matrix rain effect
                 const matrix = document.createElement('canvas');
